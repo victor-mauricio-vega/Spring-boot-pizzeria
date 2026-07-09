@@ -1,5 +1,6 @@
 package com.pizzeria.service;
 
+import com.pizzeria.dto.request.RegisterRequest;
 import com.pizzeria.entity.User;
 
 import java.util.List;
@@ -10,7 +11,6 @@ public interface IUserService {
 
     User findById(Long id);
 
-    void saveUser(User user);
-
+    User registerUser (RegisterRequest registerRequest);
 
 }

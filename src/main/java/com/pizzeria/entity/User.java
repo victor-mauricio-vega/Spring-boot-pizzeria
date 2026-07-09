@@ -20,17 +20,17 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_user;
 
-    @Column(unique = true, nullable = false)
-    private String email;
-
-    @Column(nullable = false)
-    private String password;
-
     @Column(nullable = false, name = "nombres")
     private String name;
 
     @Column(nullable = false, name = "apellidos")
     private String lastname;
+
+    @Column(unique = true, nullable = false)
+    private String email;
+
+    @Column(nullable = false)
+    private String password;
 
     @CreationTimestamp
     private LocalDateTime createdAt;
